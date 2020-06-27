@@ -1,0 +1,98 @@
+@import "common";
+body {
+    min-width: 320px;
+    // 苏宁这边是直接给个值的
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background-color: #f2f2f2;
+}
+
+@baseFont: 50;
+a {
+    text-decoration: none;
+    font-size: 25rem /@baseFont;
+}
+// search-content
+.search-content {
+    display: flex;
+    position: fixed;
+    margin: 0 auto;
+    width: 15rem;
+    height: 88rem / @baseFont;
+    background-color: #FFC001;
+}
+
+.classfy {
+    margin: 10rem / @baseFont 20rem / @baseFont;
+    width: 44rem / @baseFont;
+    height: 70rem /  @baseFont;
+    background:url(../images/classify.png) no-repeat;
+    background-size: 44rem / @baseFont 70rem /  @baseFont;
+}
+.search {
+    flex: 1;
+    input {
+        margin-top: 10rem / @baseFont;
+        outline: none;
+        border: 0;
+        width: 562rem / @baseFont;
+        height: 66rem / @baseFont;
+        border-radius:33rem / @baseFont;
+        background-color: #FFF2CC;
+        padding-left: 55rem / @baseFont;
+        color: #757575;
+        font-size: 25rem / @baseFont;
+
+    }
+
+}
+.login {
+    margin: 10rem / @baseFont;
+    width: 75rem / @baseFont;
+    height: 70rem / @baseFont;
+    text-align: center;
+    line-height:70rem / @baseFont ;
+    color: #fff;
+}
+
+// banner
+.banner {
+    width: 15rem;
+    height: 358rem / @baseFont;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+// ad-content
+.ad-content {
+    display: flex;
+    .ad {
+        flex: 1;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    a {flex: 20%;       
+         text-align: center;
+         margin-top: 10rem / @baseFont;
+        img {
+            display: block;
+            width: 82rem / @baseFont;
+            height: 82rem / @baseFont ;
+            margin: 10rem / @baseFont auto;
+        }
+        span {
+            font-size: 25rem / @baseFont;
+            color:#757575;
+        }
+    }
+}
